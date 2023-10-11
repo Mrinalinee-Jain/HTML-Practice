@@ -6,22 +6,33 @@
     <title>Registration Form</title>
 </head>
 <body>
+    <h2> Registration-Form </h2>
     <form>
         <label>User Name :</label>
-        <input type ="text"/><br>
+        <input type ="text" required/><br>
         <br>
         <label>Email-Id:</label>
-        <input type="email"/> <br>
+        <input type="email" required/> <br>
+        <br>
+        <label>Password:</label>
+        <input type="password" required maxlength="10"/> <br>
+        <br>
+        <label>Confirm Password:</label>
+        <input type="password" required maxlength="10"/> <br>
         <br>
         <label>Mobile Number :</label>
-        <input type ="number"/><br>
+        <input type ="number" required/><br>
         <br>
         <label>DOB :</label>
         <input type ="date"/><br>
         <br>
-        <label>Gender :</label>
-        <input type ="radio"/>Male<br>
-        <input typs ="radio"/>Female<br>
+        <label for="101">Gender :
+        <input type ="radio" value="male" name="gender" id="101" /> Male
+        </label>
+        <label for="102">
+        <input type ="radio"value="female" name="gender" id="102"/> female
+        </label>
+        <br>
         <br>
         <label>State :</label>
         <select>
@@ -35,15 +46,18 @@
             <option>AndhraPradesh</option>
             <option>Goa</option>
             <option>None of the above</option>
-        </select><br>
+        </select>
+        <br>
         <br>
         <label>Message :</label>
-        <textarea cols="25" rows="4"></textarea><br>
+        <textarea cols="25" rows="4"></textarea>
         <br>
-        <input type="checkbox"/><a href ="https://www.prostackacademy.com/contact">Please select Terms and Conditions.</a>
+        <br>
+        <input type="checkbox"/><a href ="https://www.prostackacademy.com/contact">Please accept Terms and Conditions.</a>
         <br>
         <br>
         <input type="submit" value="Registration"/>
+        <br>
         <br>
         <input type ="reset" value="cancel"/>
     </form>
