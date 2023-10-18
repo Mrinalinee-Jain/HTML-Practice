@@ -4,6 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Score table</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 100;
+            font-family: Arial, sans-serif;
+            
+            
+
+        }
+        td,th{
+            font-family: Arial, Helvetica, sans-serif;
+            font: size 36;
+            color: rgb(5, 5, 5);
+            border: 1px solid #242424;
+            padding: 8px;
+            text-align: center;
+            border-color: #0570f4;
+        }
+
+        tr:nth-child(even){
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 24;
+            color: #5f5b5b;
+            padding: auto;
+            background-color: #dddd;
+        }
+
+    </style>
 </head>
 <body>
    <h1>Indian player Scores</h1> 
@@ -11,9 +39,9 @@
     <pre>
     <caption> <b>   Best ODI players  </b> </caption>
     </pre>
-    <table border="1">
+    <table>
     <thead>
-        <th>Player Name</th>
+        <th style="width:40%">Player Name</th>
         <th>Total Matches</th>
         <th>Total Runs</th>
     </thead>
@@ -40,7 +68,7 @@
         </tr>
         <tr>
             <td>Dhoni</td>
-            <td>347/td>
+            <td>347/</td>
             <td>10599</td>
         </tr>
     </tbody>
