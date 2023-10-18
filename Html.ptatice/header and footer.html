@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header and footer </title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(42, 20, 63);
+        }
+        /*styling header part */
+        header{
+            background-color: rgb(128, 125, 122);
+            color: rgb(35, 1, 12);
+            text-align: center;
+            font-size: 40px;
+            padding: 30px;
+        }
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px; 
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul{
+            list-style-type: disc;
+            padding: 0%;
+        }
+
+        article{
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+        section::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        footer{
+            background-color: rgb(128, 125, 122);
+            color: rgb(35, 1, 12);
+            text-align: center;
+            font-size: 40px;
+            padding: 30px;
+        }
+      
+    </style>
+</head>
+<body>
+    <h2>Countries in World</h2>
+    <p>
+        How many Countries are there in the World?
+        Countries in the World:195
+        There are 195 countries in the world today. This total comprises 193 countries that are member states of the United Nations and 2 countries that are non-member observer states: the Holy See and the State of Palestine.</p>
+        <br>
+        <br>
+        <p>The ten largest countries in the world, listed in order of their total area, are Russia, Canada, China, the United States, Brazil, Australia, India, Argentina, Kazakhstan, and Algeria. These countries make up a significant portion of the Earth's surface, accounting for over 55% of its land area.</p>
+
+        <header>
+            <h2> Cities</h2> 
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#">Delhi</a></li>
+                    <li><a href="#">London</a></li>
+                    <li><a href="#">Paris</a></li>
+                    <li><a href="#">Moscow</a></li>
+                    <li><a href="#">Austria</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h2>Delhi</h2>
+                <p>Delhi, India’s capital territory, is a massive metropolitan area in the country’s north. In Old Delhi, a neighborhood dating to the 1600s, stands the imposing Mughal-era Red Fort, a symbol of India, and the sprawling Jama Masjid mosque, whose courtyard accommodates 25,000 people. Nearby is Chandni Chowk, a vibrant bazaar filled with food carts, sweets shops and spice stalls
+                </p>
+            </article>
+            <article>
+                <h2>london</h2>
+                <p>London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times. At its centre stand the imposing Houses of Parliament, the iconic ‘Big Ben’ clock tower and Westminster Abbey, site of British monarch coronations. Across the Thames River, the London Eye observation wheel provides panoramic views of the South Bank cultural complex, and the entire city</p>
+            </article>
+        </section>
+        <footer>
+            <address>
+                 RJ Garden, #96, Ground Floor, <br>
+                 Chinnappanahalli, Marathahalli, Bengaluru, Karnataka 560037
+             </address>
+        </footer>
+</body>
+</html>
